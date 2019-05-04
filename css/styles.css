@@ -1,0 +1,177 @@
+article{   
+    position: absolute;
+    display: block; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+article > *{   
+    position: absolute;
+    display: block; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;    
+}
+
+.fade{
+    animation-name:fade;
+    animation-duration:1.5s;
+}
+
+@keyframes fade{
+    from{ opacity: 0;  }
+    to{ opacity: 1;  }
+}
+
+
+h1 {    
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: glow 3s infinite;
+}
+@keyframes glow{
+    0% { text-shadow:0 0 20px #03a9f4; }
+    40% { text-shadow:0 0 20px #005f7c; }
+    60% { text-shadow:0 0 20px #038c96; }
+    100% { text-shadow:0 0 20px #03a9f4; }
+}
+
+
+h2 {    
+    font-size: 50px;
+    color: rgb(0, 255, 234);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    text-align: center;
+    text-shadow: 0 0 5px #00ffaa;
+}
+
+ul{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: justify;
+}
+
+.iul {
+    border: solid rgb(0, 255, 234);
+    border-width: 0 3px 3px 0;
+    height: 5px;
+    width: 5px;    
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+
+.p-hypo{ 
+    transform: translate(-50%, -120%);
+}
+
+.green {
+    color: rgb(0, 255, 234);
+}
+
+.raee {
+    width: 300px;
+    box-shadow: 0 0 50px #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%, -50%);
+}
+.hypo {
+    transform: translate(-10%, 0%);
+    width: 600px;
+}
+.check{
+    width: 200px;    
+    animation: glow-check 3s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(130%, 70%);
+}
+.danger{
+    width: 200px;
+    animation: glow-danger 3s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-220%, 70%);
+}
+
+@keyframes glow-danger{
+    0% { filter: drop-shadow(0 0 5px #ff0000); }
+    50% { filter: drop-shadow(0 0 20px #ff0000); }
+    100% { filter: drop-shadow(0 0 5px #ff0000); }
+}
+
+@keyframes glow-check{
+    0% { filter: drop-shadow(0 0 5px #00ff88); }
+    50% { filter: drop-shadow(0 0 20px #00ff88); }
+    100% { filter: drop-shadow(0 0 5px #00ff88); }
+}
+
+
+.p-width{
+    width: 30%;
+    transform: translate(-80%, -50%);
+}
+.p-left{
+    width: 30%;
+    transform: translate(-110%, -50%);
+}
+.p-right{
+    width: 30%;
+    transform: translate(10%, -50%);
+    padding-bottom: 25px;
+}
+.p-title-left{
+    transform: translate(-290%, -500%);
+}
+.p-title-right{
+    transform: translate(170%, -500%);
+}
+
+.js{
+    width: 150px;
+    transform: translate(580%, 120%);
+    animation: glow-js 2s infinite;
+}
+.mern{
+    width: 600px;
+    transform: translate(83%, 180%);
+    box-shadow: 0 0 20px #000000;
+}
+
+@keyframes glow-js{
+    0% { filter: drop-shadow(0 0 5px #d9ff00); }
+    50% { filter: drop-shadow(0 0 20px #d9ff00); }
+    100% { filter: drop-shadow(0 0 5px #d9ff00); }
+}
+
+video{
+    height: 720px;
+    transform: translate(25%, 10%);
+    box-shadow: 0 0 20px #000000;
+}

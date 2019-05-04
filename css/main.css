@@ -1,0 +1,36 @@
+
+
+/*********************************************
+ * GLOBAL
+ *********************************************/
+
+body, html {
+	overflow: hidden;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(125deg,#010c12,#04141b,#081924,#000000,#001322);
+	background-size: 400% 400%;
+	animation: bganimation 15s infinite;
+}
+
+
+/*********************************************
+ * EXPERIMENT STYLES
+ *********************************************/
+
+@keyframes bganimation {
+	0%{
+	  background-position: 0% 50%;
+	}
+	50%{
+	  background-position: 100% 50%;
+	}
+	100%{
+	  background-position: 0% 50%;
+	}
+}
+  
